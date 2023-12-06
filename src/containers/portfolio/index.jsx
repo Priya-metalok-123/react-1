@@ -1,45 +1,47 @@
 import React from "react";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import { BsInfoCircleFill } from "react-icons/bs";
-import ImageOne from "../../images/image1.jpg";
-import ImageTwo from "../../images/image2.jpg";
-import ImageThree from "../../images/image3.jpg";
-import ImageFour from "../../images/image4.jpg";
-import ImageFive from "../../images/image5.jpg";
+import ram from '../../images/img/ram.png';
 import "./styles.scss";
 import { useState } from "react";
 
 const portfolioData = [
   {
+    id: 1,
+    name: "Rammandir",
+    image: ram,
+    link: "https://rammandir.metalok.io/",
+  },
+  {
     id: 2,
-    name: "Ecommerce",
-    image: ImageOne,
-    link: "",
+    name: "sportsverse",
+    link: "https://www.sportsverse.trade/",
+    image: "https://metalok-testbucket.s3.ap-south-1.amazonaws.com/sportsverse/app_gplay_img.png",
   },
   {
     id: 3,
-    name: "Notes App",
-    link: "",
-    image: ImageTwo,
-  },
+    name: "filmable",
+    image: "https://filmable.metalok.io/assets/screen.png",
+    link: "https://filmable.metalok.io/",
+  },          
   {
-    id: 2,
-    name: "Supplier Design",
-    image: ImageThree,
-    link: "",
-  },
-  {
-    id: 2,
-    name: "Todo App",
-    image: ImageFour,
+    id: 4,
+    name: "wtl",
+    image: "https://wtl.metalok.io/static/media/manbat.76922d479b0a64da81dd.png",
 
-    link: "",
+    link: "https://wtl.metalok.io/",
   },
   {
-    id: 3,
-    name: "Shopping cart design",
-    image: ImageFive,
-    link: "",
+    id: 5,
+    name: "metalok",
+    image: "https://www.metalok.io/images/about/about-3.jpg",
+    link: "https://www.metalok.io/",
+  },
+  {
+    id: 6,
+    name: "kyyte",
+    image: "https://kyyte.io/images/animation-kyyte-mobile.webp",
+    link: "https://kyyte.io/",
   },
 ];
 
@@ -49,12 +51,12 @@ const filterData = [
     label: "All",
   },
   {
-    filterId: 2,
-    label: "Developement",
+    filterId: 5,
+    label: "",
   },
   {
-    filterId: 3,
-    label: "Design",
+    filterId: 2,
+    label: "Mobile",
   },
 ];
 
@@ -116,7 +118,7 @@ const Portfolio = () => {
                 {index === hoveredValue && (
                   <div>
                     <p>{item.name}</p>
-                    <button>Visit</button>
+                    <button onClick={() => window.open(item.link, '_blank')}>Visit</button>
                   </div>
                 )}
               </div>

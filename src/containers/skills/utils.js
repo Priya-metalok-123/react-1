@@ -1,51 +1,53 @@
 export const skillsData = [
     {
-      label: "FRONT END",
+      label: "Frontend Frameworks ",
       data: [
         {
-          skillName: "HTML",
+          skillName: "React JS",
           percentage: "90",
         },
         {
-          skillName: "CSS",
+          skillName: "Next JS",
           percentage: "50",
         },
-        {
-          skillName: "JAVASCRIPT",
-          percentage: "80",
-        },
+        
+
       ],
     },
     {
-      label: "BACK END",
+      label: "JavaScript Libraries",
       data: [
         {
-          skillName: "JAVA",
+          skillName: "Three.js",
           percentage: "70",
         },
         {
-          skillName: "PYTHON",
+          skillName: "jQuery",
           percentage: "65",
         },
         {
-          skillName: "KOTLIN",
+          skillName: "Redux Toolkit",
+          percentage: "35",
+        },
+        {
+          skillName: "TypeScript",
           percentage: "35",
         },
       ],
     },
     {
-      label: "DATABASES",
+      label: "Styling Frameworks",
       data: [
         {
-          skillName: "SQL",
+          skillName: "Bootstrap",
           percentage: "70",
         },
         {
-          skillName: "MONGO DB",
+          skillName: "Tailwind CSS",
           percentage: "65",
         },
         {
-          skillName: "ORACLE",
+          skillName: "Sass",
           percentage: "85",
         },
       ],

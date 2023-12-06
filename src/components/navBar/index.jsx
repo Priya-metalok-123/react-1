@@ -1,32 +1,33 @@
-import React, { useState } from "react";
-import { FaBars, FaReact } from "react-icons/fa";
-import { HiX } from "react-icons/hi";
-import { Link } from "react-router-dom";
-import './styles.css'
+import React, { useState } from 'react';
+import { FaBars, FaReact } from 'react-icons/fa';
+import { HiX } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
+import './styles.scss';
+
 const data = [
   {
-    label: "HOME",
-    // to: "/",
+    label: 'HOME',
+    to: '/',
   },
   {
-    label: "ABOUT ME",
-    // to: "/about",
+    label: 'ABOUT ME',
+    to: '/about',
   },
   {
-    label: "SKILLS",
-    // to: "/skills",
+    label: 'SKILLS',
+    to: '/skills',
   },
   {
-    label: "RESUME",
-    // to: "/resume",
+    label: 'RESUME',
+    to: '/resume',
   },
   {
-    label: "PORTFOLIO",
-    // to: "/portfolio",
+    label: 'PORTFOLIO',
+    to: '/portfolio',
   },
   {
-    label: "CONTACT",
-    // to: "/contact",
+    label: 'CONTACT',
+    to: '/contact',
   },
 ];
 
@@ -36,25 +37,26 @@ const Navbar = () => {
   const handleToggleIcon = () => {
     setToggleIcon(!toggleIcon);
   };
+
   return (
     <div>
       <nav className="navbar">
         <div className="navbar__container">
-          <a  className="navbar__container__logo">
+          <Link to="/" className="navbar__container__logo">
             <FaReact size={30} />
-          </a>
+          </Link>
         </div>
         <ul
-          className={`navbar__container__menu ${toggleIcon ? "active" : ""} `}
+          className={`navbar__container__menu ${toggleIcon ? 'active' : ''} `}
         >
           {data.map((item, key) => (
             <li key={key} className="navbar__container__menu__item">
-              <a
+              <Link
+                to={item.to}
                 className="navbar__container__menu__item__links"
-               
               >
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -62,6 +64,7 @@ const Navbar = () => {
           {toggleIcon ? <HiX size={30} /> : <FaBars size={30} />}
         </div>
       </nav>
+      
     </div>
   );
 };

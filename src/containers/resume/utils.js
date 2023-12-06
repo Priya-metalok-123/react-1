@@ -1,42 +1,50 @@
 export const data = {
     experience: [
       {
-        title: "Consultant",
-        subTitle: "Miami, FL",
+        title: "ENut Technologies Pvt Ltd ",
+        subTitle: "Madhapur",
         description:
-          " User Experience, Visual Design",
+          " UI Developer",
+          startDate: "2021-09",
+          endDate: "2022-03",
       },
       {
-        title: "Senior Consultant",
-        subTitle: "London, UK",
+        title: "Metalok Solutions Pvt Ltd",
+        subTitle: "Madhapur",
         description:
-          "Web development, Databases, Backend developement",
+          "React js developer",
+          startDate: "2022-03",
+          endDate: "present",
       },
-      {
-        title: "Project Manager",
-        subTitle: "Bangalore, INDIA",
-        description:
-          "Creative Direction Project Management, Team Leading",
-      },
+      
     ],
     education: [
       {
         title: "Secondary",
-        subTitle: "ABC School",
+        subTitle: "Zphs school",
         description:
-          "10th Grade",
+          "9.0",
+          startDate: "2013",
+          endDate: "2014",
+          marks:""
       },
       {
-        title: "Higher Secondary",
-        subTitle: "ABC School of higher education",
+        title: "Intermediate",
+        subTitle: "Manjeera Junior college",
         description:
-          "12th Grade in Science",
+          "MPC----(8.6)",
+          startDate: "2014",
+          endDate: "2016",
+          marks:""
       },
       {
-        title: "B.Tech",
-        subTitle: "XYZ institute of technology",
+        title: "BSC",
+        subTitle: "Manjeera Degree college",
         description:
-          "Bachelor of technology in computer science",
+          "BSC-Bachelor of science----(8.6)",
+          startDate: "2016",
+          endDate: "2019",
+          marks:""
       },
     ],
   };
